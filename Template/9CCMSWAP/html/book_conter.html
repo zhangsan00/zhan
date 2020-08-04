@@ -1,0 +1,56 @@
+<html>
+<head>
+	<title>{9CCMS:$WebTitle}-{9CCMS:$ListName}-{9CCMS:$Name}视频介绍</title>
+	<meta name="keywords" content="{9CCMS:$WebKeywords},{9CCMS:$ListName},{9CCMS:$Name}" />
+	<meta name="description" content="{9CCMS:$WebDescription},{9CCMS:$ListName},{9CCMS:$Name}" />
+	<link rel="icon" type="image/png" href="{9CCMS:$StylePath}/img/logo.ico">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=9" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="robots" content="index, follow" />
+	<meta name="revisit-after" content="1 days" />
+	<script src="{9CCMS:$StylePath}/js/jquery.min.js"></script>
+	<script src="{9CCMS:$StylePath}/js/uikit.min.js"></script>
+
+	<link rel="stylesheet" href="{9CCMS:$StylePath}/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="{9CCMS:$StylePath}/css/iconfont.css" /> 
+	<link rel="stylesheet" href="{9CCMS:$StylePath}/css/m.style.css">
+</head>
+<body>
+{9CCMS-include:Header}
+
+<div class="art-detail">
+	<h3 class="uk-text-center uk-margin-large-top">{9CCMS:$Name}</h3>
+		{9CCMS:$Play}
+</div>
+	{9CCMS-DCAd}
+	<a target="_blank"  href="{9CCMS-DCAd:Url}"><img style="width:{9CCMS-DCAd:Width};height:{9CCMS-DCAd:Height};margin-bottom:2px;" src="{9CCMS-DCAd:Pic}"></a> 
+	{/9CCMS-DCAd}
+<div class="v-type-favorite uk-clearfix">
+	<!-- 相关视频 标题 -->
+	<div class="v-type-title uk-clearfix uk-margin-top uk-margin-small-bottom"><h3 class="uk-float-left">推荐小说</h3></div>
+	<!-- 视频缩略图 -->
+	<ul class="recom recom-play">
+		{9CCMS-Book-Popular:Count=4}
+			<li>
+				<a href="{9CCMS-Book-Popular:DUrl}" class="uk-display-block ">
+					<div class="re-pic uk-float-left"><img  class="v-cover lazy" data-original="{9CCMS-Book-Popular:Pic}" alt="{9CCMS-Book-Popular:Name}"></div>
+					<div class="re-info">
+						<div class="re-h uk-margin-top-remove">{9CCMS-Book-Popular:Name}</div>
+						<div class="re-detail">
+							<span><i class="icon iconfont icon-play"></i>{9CCMS-Book-Popular:Rand}
+							</span>
+							<span><i class="icon iconfont icon-zan"></i>畅读小说乐趣无限</span>
+						</div>
+					</div>
+				</a>
+			</li>
+			
+		{/9CCMS-Book-Popular}					
+	</ul>
+</div>
+{9CCMS-include:Footer}
+ </body>
+</html>
+

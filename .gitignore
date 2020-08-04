@@ -1,0 +1,7 @@
+cache/*
+JCSQL/*
+.idea
+
+!cache/dir.lock
+!JCSQL/dir.lock
+!JCSQL/Admin/Plug

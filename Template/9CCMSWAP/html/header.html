@@ -1,0 +1,42 @@
+       <!-- 头部 开始-->
+        <div class="head uk-clearfix">
+            <a href="/" class="logo  uk-float-left"><img src="{9CCMS:$WebLogo}" alt="{9CCMS:$WebTitle}"></a>
+            <div class="search uk-float-left uk-clearfix">
+                <form id="ffsearch" name="ffsearch" method="GET" action="">
+                    <input class="uk-float-left uk-display-block" type="text" name="search" id="wd"  placeholder="影片名 / 演员名 / 导演">
+					 <button class="submit uk-float-left uk-display-block icon iconfont icon-sousuo" type="submit"></button>
+                </form>
+            </div>
+        </div>
+        <!--头部 结束 -->
+        <!-- 导航 开始 -->
+        <div class="nav-warp" >
+            <ul class="nav">
+                <li class="active"><a href="/" >首页</a></li>
+                <li class="nav-parent"><a href="javascript:;" >视频一区</a></li>
+                <li class="nav-parent"><a href="javascript:;" >视频二区</a></li>
+				<li class="nav-parent"><a href="javascript:;" >视频三区</a></li>
+                <li class="nav-parent"><a href="javascript:;" >小说专区</a></li>
+                <li class="nav-parent"><a href="javascript:;" >图片专区</a></li>
+				 <li class="nav-parent"><a href="javascript:;" >电台种子</a></li>
+
+            </ul>
+            <div class="nav-child-box">
+                <ul class="nav-child uk-margin-remove uk-clearfix">{9CCMS:Type=1,2,3,4,5,6}<li><a  href="{9CCMS:Url}">{9CCMS:Name}</a></li>{/9CCMS:Type}</ul>
+                <ul class="nav-child uk-margin-remove uk-clearfix">{9CCMS:Type=7,8,9,10,11,12}<li><a  href="{9CCMS:Url}">{9CCMS:Name}</a></li>{/9CCMS:Type}</ul>
+                <ul class="nav-child uk-margin-remove uk-clearfix">{9CCMS:Type=13,14,15,16,17,18}<li><a  href="{9CCMS:Url}">{9CCMS:Name}</a></li>{/9CCMS:Type} </ul>
+                <ul class="nav-child uk-margin-remove uk-clearfix">{9CCMS:Type=19,20,21,22,23,24}<li><a  href="{9CCMS:Url}">{9CCMS:Name}</a></li>{/9CCMS:Type}</ul>
+                <ul class="nav-child uk-margin-remove uk-clearfix">{9CCMS:Type=25,26,27,28,29,30}<li><a  href="{9CCMS:Url}">{9CCMS:Name}</a></li>{/9CCMS:Type}</ul>	
+                <ul class="nav-child uk-margin-remove uk-clearfix">{9CCMS:Type=31,32,33,34,35,36}<li><a  href="{9CCMS:Url}">{9CCMS:Name}</a></li>{/9CCMS:Type}</ul>					
+            </div>
+            
+        </div>
+        <!-- 导航 结束 -->
+		<div class="v-type " id="v-type-nav">
+				<center>	
+					{9CCMS-TAd}
+						<li><a target="_blank"  href="{9CCMS-TAd:Url}" ><img style="width:{9CCMS-TAd:Width};height:{9CCMS-TAd:Height};margin-bottom:2px;" src="{9CCMS-TAd:Pic}"></a></li> 
+					 {/9CCMS-TAd}		
+				</center>
+		</div>
+

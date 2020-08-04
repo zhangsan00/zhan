@@ -1,0 +1,92 @@
+<html>
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+	<title>{9CCMS:$WebTitle}-{9CCMS:$ListName}-{9CCMS:$Name}种子下载通道</title>
+	<meta name="keywords" content="{9CCMS:$WebKeywords},{9CCMS:$ListName},{9CCMS:$Name}" />
+	<meta name="description" content="{9CCMS:$WebDescription},{9CCMS:$ListName},{9CCMS:$Name}" />
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<meta http-equiv="Cache-Control" content="no-transform" />
+		<meta name="applicable-device" content="pc,mobile" />
+      	<link href="{9CCMS:$StylePath}/static/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<link href="{9CCMS:$StylePath}/static/css/swiper.min.css" rel="stylesheet" type="text/css" />
+		<link href="{9CCMS:$StylePath}/static/css/style.css" rel="stylesheet" type="text/css" />
+		<link href="{9CCMS:$StylePath}/static/css/white.css" rel="stylesheet" type="text/css" />
+		<script src="{9CCMS:$StylePath}/static/js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="{9CCMS:$StylePath}/static/js/bootstrap.min.js"></script>
+		<link href="{9CCMS:$StylePath}/static/css/style_1.css" rel="stylesheet">
+</head>
+
+<body>
+		{9CCMS-include:Header}
+		<div class="container">
+			<div class="row">
+			
+	<div class="layout-box clearfix">
+			<div class="box-min-mcid clearfix">
+				<div class="item clearfix">
+					<dl class="clearfix">
+						<!--<dt class="text-muted">频道</dt>-->
+						<dd class="clearfix">
+						<a href="#">种子分类</a>&nbsp;
+						 {9CCMS:Type=35,36}<a  href="{9CCMS:Url}">{9CCMS:Name}&nbsp;</a>{/9CCMS:Type}
+					</dl>
+				</div>
+			</div>
+		</div>
+		<div id="dtextlink" class="wrap border-gray fn-clear">
+		  <div class="textlink fn-left">
+		  <strong>您所在的位置：</strong><a>{9CCMS:$ListName}</a>&nbsp;>&nbsp;<a>{9CCMS:$Name}</a>&nbsp;>&nbsp;<a>种子下载通道</a></div>
+		</div>		
+            <div class="ui-box border-gray clearfix">
+               <div class="playfrom jsfrom tab1 clearfix" style="border-left-color:#0086cf;border-right-color:#0086cf;">
+                  <span class="laiyuan">种子下载通道</span>
+               </div>
+               <div class="playlist jsplist clearfix">
+                  <ul class="playul">
+                     
+                     <li><a title='下载通道1' href= "{9CCMS:$Play}" target="_self">下载通道1</a></li>
+                     <li><a title='下载通道2' href= "{9CCMS:$Play}" target="_self">下载通道2</a></li>
+                     <li><a title='下载通道3' href= "{9CCMS:$Play}" target="_self">下载通道3</a></li>
+
+                 </ul>
+               </div>
+            </div>			
+	 <div class="ui-box border-gray clearfix">
+				 {9CCMS-DCAd}
+					<li><a target="_blank"  href="{9CCMS-DCAd:Url}" ><img style="width:{9CCMS-DCAd:Width};height:{9CCMS-DCAd:Height};margin-bottom:2px;" src="{9CCMS-DCAd:Pic}"></a></li> 
+				 {/9CCMS-DCAd}
+	</div>			
+				<div class="layout-box clearfix">
+					<div class="box-title">
+						<h3 class="m-0"><i class="icon iconfont text-color"></i>种子推荐</h3>
+					</div>
+					<ul class="clearfix">
+						{9CCMS-Bt-Popular:Count=8}
+							<li class="col-md-2 col-sm-3 col-xs-4 ">
+							<a class="video-pic loading" style="background-image: url({9CCMS-Bt-Popular:Pic});" href="{9CCMS-Bt-Popular:DUrl}" title="{9CCMS-Bt-Popular:Name}">
+							<span class="player"></span>
+							<span class="note text-bg-r"></span>
+							</a>
+							<div class="title">
+								<h5 class="text-overflow"><a href="{9CCMS-Bt-Popular:DUrl}" title="{9CCMS-Bt-Popular:Name}">{9CCMS-Bt-Popular:Name}</a></h5>
+							</div>
+							<div class="subtitle text-time text-overflow">热度:{9CCMS-Bt-Popular:Rand}</div>
+						</li>
+						{/9CCMS-Bt-Popular}
+					</ul>					
+				</div>
+			</div>
+		</div>
+
+		{9CCMS-include:Footer}	
+		
+
+ </body>
+</html>
+

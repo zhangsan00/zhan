@@ -1,0 +1,117 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>{9CCMS:$WebTitle}-{9CCMS:$ListName}-{9CCMS:$Name}电台介绍</title>
+	<meta name="keywords" content="{9CCMS:$WebKeywords},{9CCMS:$ListName},{9CCMS:$Name}" />
+	<meta name="description" content="{9CCMS:$WebDescription},{9CCMS:$ListName},{9CCMS:$Name}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{9CCMS:$StylePath}/css/uikit.min.css" />
+    <link rel="stylesheet" href="{9CCMS:$StylePath}/css/common.min.css" />
+    <link rel="stylesheet" href="{9CCMS:$StylePath}/font/iconfont.css" />
+    <script src="{9CCMS:$StylePath}/js/jquery.js"></script>
+    <script src="{9CCMS:$StylePath}/js/uikit.min.js"></script>
+    <script src="{9CCMS:$StylePath}/js/accordion.min.js"></script>
+	<link rel="icon" type="image/png" href="{9CCMS:$StylePath}/images/logo.ico">
+</head>
+<body>
+    <div class="w1200 uk-clearfix">
+			{9CCMS-include:Header}
+				<div class="right-container">
+                <div class="list-Bts uk-margin-top uk-margin-bottom">
+                    <div class="Bt-head uk-clearfix uk-margin-bottom">
+                        <!-- 面包屑 -->
+                        <div class="bred uk-float-left">
+                            <p>
+                                <i class="icon iconfont icon-home"></i>
+                                <span>您当前位置：</span>
+                                <a href="#">{9CCMS:$ListName}</a>
+                                <i class="icon iconfont icon-right"></i>
+                                <a href="#" class="">{9CCMS:$Name}</a>
+                                <i class="icon iconfont icon-right"></i>
+                                <span class="right">电台介绍</span>
+                            </p>
+                            
+                        </div>
+                    </div>
+					<div class="Bt-content">
+                        <div class="read">
+                            <!-- 标题 -->
+                            <h3 class="uk-text-left uk-margin-bottom">{9CCMS:$Name}</h3>
+                            <!-- 影片信息 -->
+                            <div class="read-text uk-margin-top-remove uk-clearfix">
+                                <!-- 播放按钮 -->
+                                <div class="read-btn uk-margin-bottom uk-float-left">
+                                    <a href="{9CCMS:$CUrl}" class="uk-float-left uk-margin-large-right uk-button h-line ">电台播放</a>
+                                    <a href="{9CCMS:$CUrl}" class="uk-float-left uk-margin-large-right uk-button h-line ">备用电台</a>
+                                </div>
+                                <p class="uk-float-left uk-margin-large-right">电台分类:<span>{9CCMS:$ListName}</span></p>
+                                <p class="uk-float-left uk-margin-large-right">更新时间:<span>{9CCMS:$Time}</span></p>
+                            </div>
+                        </div>
+                        
+						<!-- 分割线 -->
+						<div class="line"><hr></div>
+						 {9CCMS-DCAd}
+							<li><a target="_blank"  href="{9CCMS-DCAd:Url}"><img style="width:{9CCMS-DCAd:Width};height:{9CCMS-DCAd:Height};margin-bottom:2px;" src="{9CCMS-DCAd:Pic}"></a></li> 
+						 {/9CCMS-DCAd}
+						<!-- 分割线 -->
+                    </div>					
+					<div class="list-Bts uk-margin-top uk-margin-bottom">
+                    <div class="video-head uk-clearfix">
+                        <h3 class="h3-color uk-float-left">{9CCMS:$ListName}推荐电台</h3>
+                        <a href="{9CCMS:$ListUrl}" class="more">{9CCMS:$ListName}更多推荐电台</a>
+                    </div>
+
+
+
+
+                    <div class="video-content uk-grid uk-grid-small">	
+					
+
+							{9CCMS-Radio-Popular:Count=9}
+							<div class="uk-width-1-3 uk-margin-bottom">
+								<a href="{9CCMS-Radio-Popular:DUrl}" class="Bt-pic uk-display-block">
+									<span class="live-tag"></span>
+									<img src="{9CCMS-Radio-Popular:Pic}" alt="{9CCMS-Radio-Popular:Name}">
+								</a>
+								<div class="video-title">
+									<a href="{9CCMS-Radio-Popular:DUrl}" class="uk-margin-small-bottom uk-margin-small-top uk-display-block">
+									{9CCMS-Radio-Popular:Name}</a>
+									<div class="uk-clearfix uk-margin-small-top">
+										<p class="video-play uk-float-left"><i class="icon iconfont icon-play"></i><span>{9CCMS-Radio-Popular:Rand}</span></p>
+										<p class="video-like uk-float-left uk-margin-left"><i class="icon iconfont icon-like"></i><span>{9CCMS-Radio-Popular:Rand}</span></p>
+									</div>
+								</div>
+							</div>
+					{/9CCMS-Radio-Popular}						
+					
+
+
+
+
+                  
+                    </div>
+                </div>
+				<div class="line">
+                    <hr>
+                </div>
+
+
+
+        </div>				
+				
+				
+				
+				
+				
+				
+
+				 <!-- 视频结束 -->				 
+				</div> <!-- header.html闭合DIV -->
+			{9CCMS-include:Footer}
+		</div>	
+	</div>
+ </body>
+</html>
+

@@ -1,0 +1,96 @@
+<html>
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+		<title>{9CCMS:$WebTitle}</title>
+		<meta name="keywords" content="{9CCMS:$WebKeywords}" />
+		<meta name="description" content="{9CCMS:$WebDescription}" />
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<meta http-equiv="Cache-Control" content="no-transform" />
+		<meta name="applicable-device" content="pc,mobile" />
+      	<link href="{9CCMS:$StylePath}/static/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<link href="{9CCMS:$StylePath}/static/css/swiper.min.css" rel="stylesheet" type="text/css" />
+		<link href="{9CCMS:$StylePath}/static/css/style.css" rel="stylesheet" type="text/css" />
+		<link href="{9CCMS:$StylePath}/static/css/white.css" rel="stylesheet" type="text/css" />
+		<script src="{9CCMS:$StylePath}/static/js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="{9CCMS:$StylePath}/static/js/bootstrap.min.js"></script>
+		<link href="{9CCMS:$StylePath}/static/css/style_1.css" rel="stylesheet">
+</head>
+<body>
+		{9CCMS-include:Header}
+		
+		<div class="xbq"></div>
+<script type="text/javascript">
+	//在js中引入小标签
+	$(document).ready(function () {
+		$('.xbq').load('/Template/01sihu/html/xbq.html');
+	});
+</script>
+
+		<div class="container">
+			<div class="row">
+				<div class="layout-box clearfix">
+					<div class="box-title">
+						<h3 class="m-0"><i class="icon iconfont text-color"></i>{9CCMS-Index-Type:1}</h3>
+					</div>
+					<ul class="clearfix">
+						{9CCMS-Index:Type=1,Count=8}
+							<li class="col-md-2 col-sm-3 col-xs-4 ">
+							<a class="video-pic loading" style="background-image: url({9CCMS-Index:Pic});" href="{9CCMS-Index:DUrl}" title="{9CCMS-Index:Name}">
+							<span class="player"></span>
+							<span class="note text-bg-r"></span>
+							</a>
+							<div class="title">
+								<h5 class="text-overflow"><a href="{9CCMS-Index:DUrl}" title="{9CCMS-Index:Name}">{9CCMS-Index:Name}</a></h5>
+							</div>
+							<div class="subtitle text-time text-overflow">热度:{9CCMS-Index:Rand}</div>
+						</li>
+						{/9CCMS-Index}
+					</ul>	
+					<div class="box-title">
+						<h3 class="m-0"><i class="icon iconfont text-color"></i>{9CCMS-Index-Type:4}</h3>
+					</div>
+					<ul class="clearfix">
+						{9CCMS-Index:Type=4,Count=8}
+							<li class="col-md-2 col-sm-3 col-xs-4 ">
+							<a class="video-pic loading" style="background-image: url({9CCMS-Index:Pic});" href="{9CCMS-Index:DUrl}" title="{9CCMS-Index:Name}">
+							<span class="player"></span>
+							<span class="note text-bg-r"></span>
+							</a>
+							<div class="title">
+								<h5 class="text-overflow"><a href="{9CCMS-Index:DUrl}" title="{9CCMS-Index:Name}">{9CCMS-Index:Name}</a></h5>
+							</div>
+							<div class="subtitle text-time text-overflow">热度:{9CCMS-Index:Rand}</div>
+						</li>
+						{/9CCMS-Index}
+					</ul>	
+					<div class="box-title">
+						<h3 class="m-0"><i class="icon iconfont text-color"></i>{9CCMS-Index-Type:6}</h3>
+					</div>
+					<ul class="clearfix">
+						{9CCMS-Index:Type=6,Count=8}
+							<li class="col-md-2 col-sm-3 col-xs-4 ">
+							<a class="video-pic loading" style="background-image: url({9CCMS-Index:Pic});" href="{9CCMS-Index:DUrl}" title="{9CCMS-Index:Name}">
+							<span class="player"></span>
+							<span class="note text-bg-r"></span>
+							</a>
+							<div class="title">
+								<h5 class="text-overflow"><a href="{9CCMS-Index:DUrl}" title="{9CCMS-Index:Name}">{9CCMS-Index:Name}</a></h5>
+							</div>
+							<div class="subtitle text-time text-overflow">热度:{9CCMS-Index:Rand}</div>
+						</li>
+						{/9CCMS-Index}
+					</ul>					
+				</div>
+			</div>
+		</div>
+		
+		{9CCMS-include:Footer}			
+ </body>
+</html>
+

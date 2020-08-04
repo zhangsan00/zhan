@@ -1,0 +1,117 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>{9CCMS:$WebTitle}</title>
+	<meta name="keywords" content="{9CCMS:$WebKeywords}" />
+	<meta name="description" content="{9CCMS:$WebDescription}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{9CCMS:$StylePath}/css/uikit.min.css" />
+    <link rel="stylesheet" href="{9CCMS:$StylePath}/css/common.min.css" />
+    <link rel="stylesheet" href="{9CCMS:$StylePath}/font/iconfont.css" />
+    <script src="{9CCMS:$StylePath}/js/jquery.js"></script>
+    <script src="{9CCMS:$StylePath}/js/uikit.min.js"></script>
+	<script src="{9CCMS:$StylePath}/js/accordion.min.js"></script>
+	<link rel="icon" type="image/png" href="{9CCMS:$StylePath}/images/logo.ico">
+
+</head>
+<body>
+    <div class="w1200 uk-clearfix">
+			{9CCMS-include:Header}
+				<div class="right-container">
+					<!-- 视频分类 -->
+					<div class="list-videos uk-margin-top uk-margin-bottom">
+						<div class="video-head uk-clearfix"><h3 class="h3-color uk-float-left">{9CCMS-Index-Type:1}</h3></div>
+						<div class="video-content uk-grid uk-grid-small">					
+							{9CCMS-Index:Type=1,Count=6}	
+								<div class="uk-width-1-3 uk-margin-bottom">
+								<a href="{9CCMS-Index:DUrl}" class="video-pic uk-display-block">
+									<span class="live-tag"></span>
+									<img src="{9CCMS-Index:Pic}" alt="{9CCMS-Index:Name}">
+								</a>
+								<div class="video-title">
+									<a href="#" class="uk-margin-small-bottom uk-margin-small-top uk-display-block">{9CCMS-Index:Name}</a>
+									<div class="uk-clearfix uk-margin-small-top">
+										<p class="video-play uk-float-left">
+											<i class="icon iconfont icon-play"></i>
+											<span>{9CCMS-Index:Rand}</span>
+										</p>
+										<p class="video-like uk-float-left uk-margin-left">
+											<i class="icon iconfont icon-like"></i>
+											<span>{9CCMS-Index:Rand}</span>
+										</p>
+									</div>
+								</div>
+							</div>
+							{/9CCMS-Index}
+						</div>
+						<div class="video-head uk-clearfix"><h3 class="h3-color uk-float-left">{9CCMS-Index-Type:4}</h3></div>
+						<div class="video-content uk-grid uk-grid-small">					
+							{9CCMS-Index:Type=4,Count=6}	
+								<div class="uk-width-1-3 uk-margin-bottom">
+								<a href="{9CCMS-Index:DUrl}" class="video-pic uk-display-block">
+									<span class="live-tag"></span>
+									<img src="{9CCMS-Index:Pic}" alt="{9CCMS-Index:Name}">
+								</a>
+								<div class="video-title">
+									<a href="#" class="uk-margin-small-bottom uk-margin-small-top uk-display-block">{9CCMS-Index:Name}</a>
+									<div class="uk-clearfix uk-margin-small-top">
+										<p class="video-play uk-float-left">
+											<i class="icon iconfont icon-play"></i>
+											<span>{9CCMS-Index:Rand}</span>
+										</p>
+										<p class="video-like uk-float-left uk-margin-left">
+											<i class="icon iconfont icon-like"></i>
+											<span>{9CCMS-Index:Rand}</span>
+										</p>
+									</div>
+								</div>
+							</div>
+							{/9CCMS-Index}
+						</div>
+						<div class="video-head uk-clearfix"><h3 class="h3-color uk-float-left">{9CCMS-Index-Type:6}</h3></div>
+						<div class="video-content uk-grid uk-grid-small">					
+							{9CCMS-Index:Type=6,Count=6}	
+								<div class="uk-width-1-3 uk-margin-bottom">
+								<a href="{9CCMS-Index:DUrl}" class="video-pic uk-display-block">
+									<span class="live-tag"></span>
+									<img src="{9CCMS-Index:Pic}" alt="{9CCMS-Index:Name}">
+								</a>
+								<div class="video-title">
+									<a href="#" class="uk-margin-small-bottom uk-margin-small-top uk-display-block">{9CCMS-Index:Name}</a>
+									<div class="uk-clearfix uk-margin-small-top">
+										<p class="video-play uk-float-left">
+											<i class="icon iconfont icon-play"></i>
+											<span>{9CCMS-Index:Rand}</span>
+										</p>
+										<p class="video-like uk-float-left uk-margin-left">
+											<i class="icon iconfont icon-like"></i>
+											<span>{9CCMS-Index:Rand}</span>
+										</p>
+									</div>
+								</div>
+							</div>
+							{/9CCMS-Index}
+						</div>						
+					</div>
+				 <!-- 视频结束 -->
+					<div class="line"><hr></div>				 
+				 
+				 
+					<div class="list-videos uk-margin-top uk-margin-bottom">
+						<div class="video-head uk-clearfix">
+							<h3 class="h3-color uk-float-left">友情链接</h3>
+						</div>
+						<ul class="links-list uk-display-block uk-clearfix">
+						{9CCMS-IeUrl}
+						<li class="uk-float-left uk-margin-right"><a href="{9CCMS-IeUrl:Url}" target="_blank" class="uk-float-left">{9CCMS-IeUrl:Name}</a></li>
+						{/9CCMS-IeUrl}
+						</ul>
+					</div>
+				</div> <!-- header.html闭合DIV -->
+			{9CCMS-include:Footer}
+		</div>
+	</div>
+ </body>
+</html>
+

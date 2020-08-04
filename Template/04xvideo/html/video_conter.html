@@ -1,0 +1,90 @@
+
+<html class="xv-responsive" lang="zh">
+<head>
+	<title>{9CCMS:$WebTitle}-{9CCMS:$ListName}-{9CCMS:$Name}视频播放</title>
+	<meta name="keywords" content="{9CCMS:$WebKeywords},{9CCMS:$ListName},{9CCMS:$Name}" />
+	<meta name="description" content="{9CCMS:$WebDescription},{9CCMS:$ListName},{9CCMS:$Name}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="format-detection" content="telephone=no">
+	<meta name="theme-color" content="#000000">
+	<link rel="stylesheet" href="{9CCMS:$StylePath}/static/css/main.css">
+
+
+<script>
+if (!window.xv) {
+    window.xv = {};
+}
+window.xv.conf = {
+    "sitename": "default",
+    "dyn": {
+        "pagefilter": "straight",
+        "no_main_cat": false,
+        "suportHls": true,
+        "login_info": {
+            "is_logged": false,
+            "is_premium": false,
+            "profile": false,
+            "iptrusted": -1,
+            "orientation": "straight",
+            "recaptchakey": "6LeEkhMTAAAAAFrfG3CxNAT9JiM1oLIkyU7UuYYQ",
+            "invrecaptchakey": "6LcM6ScUAAAAAHFxb4HmgMyNHrfi61bf_USRJ4uo"
+        }
+    }};
+</script>
+	<script src="{9CCMS:$StylePath}/static/js/default.header.static.js"></script>
+</head>
+<body class="home should-have-side-tf-tower">
+<div id="page">
+{9CCMS-include:Header}
+	<div id="main">
+	<div id="home-tabs" class="xv-tabs ">
+	<ul class="tab-buttons tab-6-buttons">
+		<li class="hide-if-premium"><a class="btn btn-default home active" href="/"><span class="icon video mobile-show-inline-block"></span><span class="label mobile-hide">{9CCMS:$Name}</span></a></li>
+	
+	</div>	
+
+	<div id="content">
+	
+	   <div style="height:300px">{9CCMS:$Play}</div>
+	
+		 {9CCMS-DCAd}
+						<a target="_blank"  href="{9CCMS-DCAd:Url}"><img style="width:{9CCMS-DCAd:Width};height:{9CCMS-DCAd:Height};margin-bottom:2px;" src="{9CCMS-DCAd:Pic}"></a>
+						 {/9CCMS-DCAd}		
+	<div class="mozaique">
+	{9CCMS-Video-Popular:Count=10}		
+	<div   class="thumb-block ">
+		<div class="thumb-inside">
+			<div class="microthumb">
+				<div class="microthumb-thumb" style="background-position:0% 0%"></div>
+				<div class="microthumb-border"></div>
+			</div>
+			<div class="thumb">
+				<a href="{9CCMS-Video-Popular:DUrl}"><img src="{9CCMS-Video-Popular:Pic}"    /></a>
+			</div>
+		</div>
+		<div class="thumb-under">
+			<p class="title">
+				<a href="{9CCMS-Video-Popular:DUrl}" title="Japan group sex">{9CCMS-Video-Popular:Name}</a>
+			</p>
+			<p class="metadata">
+				<span class="bg">
+					<span class="duration">热度:{9CCMS-Video-Popular:Rand}</span>
+
+			</p>
+		</div>
+	</div>																
+	{/9CCMS-Video-Popular}
+
+
+	</div>
+
+	</div>
+
+
+
+{9CCMS-include:Footer}
+ </body>
+</html>
+

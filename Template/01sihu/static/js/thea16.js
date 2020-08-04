@@ -1,0 +1,1 @@
+document.write("<table width=\"100%\" height=\"90\" bgcolor=\"#0086cf\" style=\"background:#0086cf\">    <tr align=\"center\">      <td style=\"text-align: center;color: #fff;line-height: 90px;background:#0086cf\">后台-插件-广告管理-播放页广告位三</td>    </tr>  </table>")

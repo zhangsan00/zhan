@@ -1,0 +1,56 @@
+<html>
+<head>
+	<title>{9CCMS:$WebTitle}-{9CCMS-Search-List:Title}-搜索结果页</title>
+	<meta name="keywords" content="{9CCMS:$WebKeywords},{9CCMS-Search-List:Title}" />
+	<meta name="description" content="{9CCMS:$WebDescription},{9CCMS-Search-List:Title}" />
+	<link rel="icon" type="image/png" href="{9CCMS:$StylePath}/img/logo.ico">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=9" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="robots" content="index, follow" />
+	<meta name="revisit-after" content="1 days" />
+	<script src="{9CCMS:$StylePath}/js/jquery.min.js"></script>
+	<script src="{9CCMS:$StylePath}/js/uikit.min.js"></script>
+	<link rel="stylesheet" href="{9CCMS:$StylePath}/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="{9CCMS:$StylePath}/css/iconfont.css" /> 
+	<link rel="stylesheet" href="{9CCMS:$StylePath}/css/m.style.css">
+</head>
+<body>
+{9CCMS-include:Header}
+<div class="v-type " style="margin-top: 0rem; ">
+    <div class="v-type-title uk-clearfix"><div><h3 class="type-h3">搜索内容为:{9CCMS-Search-List:Title}</h3></div></div>
+            <ul class="v-list uk-clearfix uk-display-block">
+			{9CCMS-Search-List:Count=8}
+                <li class="v-item v-item">
+                    <a href="{9CCMS-Search-List:DUrl}" class="uk-display-block">
+                        <div class="v-cover lazy" data-original="{9CCMS-Search-List:Pic}"></div>
+                        <h3 class="v-title">{9CCMS-Search-List:Name}</h3>
+                        <div class="uk-clearfix v-icon">
+                            <p class="uk-float-left uk-margin-right">
+                                <i class="icon iconfont icon-play"></i>
+                                <span>{9CCMS-Search-List:Rand}</span>
+                            </p>
+                            <p class="uk-float-left uk-margin-top-remove">
+                                <i class="icon iconfont icon-zan"></i>
+                                <span>{9CCMS-Search-List:Rand}</span>
+                            </p>
+                        </div>
+                    </a>
+                </li>						
+			{/9CCMS-Search-List}
+            </ul>
+            <div id="wr-page"></div>
+            <script src="{9CCMS:$StylePath}/js/page.js?t=1"></script>
+            <script type="text/javascript">
+                $("#wr-page").wrpage({
+                    pagesize: '{9CCMS-Search-List:totalPage}',
+                    wr_current: '{9CCMS-Search-List:currentPage}',
+                    baseUrl: '{9CCMS-Search-List:baseUrl}',
+                })
+            </script>
+</div>
+{9CCMS-include:Footer}	
+ </body>
+</html>
+

@@ -1,0 +1,82 @@
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="renderer" content="webkit|ie-comp|ie-stand">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+	<title>{9CCMS:$WebTitle}分类{9CCMS-Video-List:Title}在线视频列表页面</title>
+	<meta name="keywords" content="{9CCMS:$WebKeywords},{9CCMS-Video-List:Title}" />
+	<meta name="description" content="{9CCMS:$WebDescription},{9CCMS-Video-List:Title}" />
+	<meta http-equiv="Cache-Control" content="no-siteapp" />
+	<meta http-equiv="Cache-Control" content="no-transform" />
+	<meta name="applicable-device" content="pc,mobile" />
+	<link href="{9CCMS:$StylePath}/static/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="{9CCMS:$StylePath}/static/css/swiper.min.css" rel="stylesheet" type="text/css" />
+	<link href="{9CCMS:$StylePath}/static/css/style.css" rel="stylesheet" type="text/css" />
+	<link href="{9CCMS:$StylePath}/static/css/white.css" rel="stylesheet" type="text/css" />
+	<script src="{9CCMS:$StylePath}/static/js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="{9CCMS:$StylePath}/static/js/bootstrap.min.js"></script>
+	<link href="{9CCMS:$StylePath}/static/css/style_1.css" rel="stylesheet">
+</head>
+
+<body>
+	{9CCMS-include:Header}
+	<div class="container">
+		<div class="row">
+
+			<div class="layout-box clearfix">
+				<div class="box-min-mcid clearfix">
+					<div class="item clearfix">
+						<dl class="clearfix">
+							<!--<dt class="text-muted">频道</dt>-->
+							<dd class="clearfix">
+								<a href="#">视频分类</a>&nbsp;
+								{9CCMS:Type=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18}<a
+									href="{9CCMS:Url}">{9CCMS:Name}&nbsp;</a>{/9CCMS:Type}
+						</dl>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="layout-box clearfix">
+				<div class="box-title">
+					<h3 class="m-0"><i class="icon iconfont text-color"></i>{9CCMS-Video-List:Title}列表页</h3>
+				</div>
+				<ul class="clearfix">
+					{9CCMS-Video-List:Count=8}
+					<li class="col-md-2 col-sm-3 col-xs-4 ">
+						<a class="video-pic loading" style="background-image: url({9CCMS-Video-List:Pic});"
+							href="{9CCMS-Video-List:DUrl}" title="{9CCMS-Video-List:Name}">
+							<span class="player"></span>
+							<span class="note text-bg-r"></span>
+						</a>
+						<div class="title">
+							<h5 class="text-overflow"><a href="{9CCMS-Video-List:DUrl}"
+									title="{9CCMS-Video-List:Name}">{9CCMS-Video-List:Name}</a></h5>
+						</div>
+						<div class="subtitle text-time text-overflow">热度:{9CCMS-Video-List:Rand}</div>
+					</li>
+					{/9CCMS-Video-List}
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="box-page clearfix" id="long-page">
+		<ul>
+			<li><a href="{9CCMS-Video-List:PageUrl}" class="disabled">首页</a></li>
+			<li><a href="{9CCMS-Video-List:prevUrl}" class="disabled">上一页</a></li>
+			<li><a href="{9CCMS-Video-List:nextUrl}" class="disabled">下一页</a></li>
+			<li><a href="{9CCMS-Video-List:totalUrl}" class="disabled">尾页</a></li>
+		</ul>
+	</div>
+	{9CCMS-include:Footer}
+
+
+</body>
+
+</html>
