@@ -68,6 +68,21 @@
                 </a>
     
             </div>
+        
+        <!-- 定义一个baiid为cg -->
+<span id="cg">2016/12/21 上午12:00:00</span>
+<script>
+<!--这个cg就是span的id，初始化duDate时间并转化为字符string类型,每1000毫秒，setInterval() 就会调用函数，直到被关闭。-->
+setInterval("cg.innerHTML=new Date().toLocaleString()",1000);
+</script>
+        
+        <script language="javascript">
+var mydate=new Date();
+var mymonth=mydate.getMonth()+1;
+var myday= mydate.getDate();
+var myyear= mydate.getYear();
+document.write(myyear+"-"+mymonth+"-"+myday);</script>
+        
 <div style="display:none;"><script type="text/javascript" src="https://v1.cnzz.com/z_stat.php?id=1279024953&web_id=1279024953"></script></div>
             
 </body>
